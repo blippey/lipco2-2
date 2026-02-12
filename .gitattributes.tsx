@@ -1,4 +1,5 @@
 
+
 *.jpg binary
 *.png binary
 *.avif binary
