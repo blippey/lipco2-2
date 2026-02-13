@@ -5,7 +5,7 @@ const Team: React.FC = () => {
   const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
 
   return (
-    <section id="about" className="pt-24 pb-12 bg-gray-900 border-t border-gray-800">
+    <section id="about" className="pt-24 pb-20 bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 max-w-5xl">
         {/* Mike Hartt Section */}
         <div className="text-center mb-32">
