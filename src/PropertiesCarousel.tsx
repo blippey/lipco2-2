@@ -1,12 +1,14 @@
 
 import React, { useRef } from 'react';
 
+const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
+
 const PROPERTIES = [
-  { id: 1, img: '/assets/2.avif' },
-  { id: 2, img: '/assets/3.jpg' },
-  { id: 3, img: '/assets/4.jpg' },
-  { id: 4, img: '/assets/5.jpg' },
-  { id: 5, img: '/assets/6.jpg' },
+  { id: 1, img: `${assetBase}2.avif?raw=true` },
+  { id: 2, img: `${assetBase}3.jpg?raw=true` },
+  { id: 3, img: `${assetBase}4.jpg?raw=true` },
+  { id: 4, img: `${assetBase}5.jpg?raw=true` },
+  { id: 5, img: `${assetBase}6.jpg?raw=true` },
 ];
 
 const PropertiesCarousel: React.FC = () => {

@@ -10,7 +10,7 @@ const Navbar: React.FC = () => {
         <nav className="flex justify-between items-center h-20">
           <a href="#" className="flex items-center space-x-2">
             <img 
-              src="/assets/Lipco-logo.png" 
+              src="https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/Lipco-logo.png?raw=true" 
               alt="The Lippey Company" 
               className="h-10 md:h-12 w-auto"
             />

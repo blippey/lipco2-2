@@ -2,6 +2,8 @@
 import React from 'react';
 
 const Team: React.FC = () => {
+  const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
+
   return (
     <section id="about" className="py-24 bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 max-w-5xl">
@@ -15,7 +17,7 @@ const Team: React.FC = () => {
           <div className="relative w-64 mx-auto mb-12 group">
             <div className="absolute inset-0 bg-gradient-to-r from-teal-500 to-blue-600 rounded-lg transform -rotate-6 transition-transform group-hover:-rotate-3"></div>
             <img 
-              src="/assets/IMG_1335.jpg" 
+              src={`${assetBase}IMG_1335.jpg?raw=true`} 
               alt="Mike Hartt, President & CEO" 
               className="relative rounded-lg shadow-2xl w-full h-80 object-cover"
             />
@@ -31,7 +33,7 @@ const Team: React.FC = () => {
           <div className="relative w-full max-w-xs mx-auto md:mx-0 order-2 md:order-1 group">
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-500 rounded-lg transform rotate-6 transition-transform group-hover:rotate-3"></div>
             <img 
-              src="/assets/Bill.jpg" 
+              src={`${assetBase}Bill.jpg?raw=true`} 
               alt="Bill Hunter, Operations Manager" 
               className="relative rounded-lg shadow-2xl w-full h-96 object-cover"
             />
