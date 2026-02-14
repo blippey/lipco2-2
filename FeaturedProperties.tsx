@@ -1,7 +1,7 @@
 import React from 'react';
 
 const FeaturedProperties: React.FC = () => {
-  const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
+  const assetBase = 'https://github.com/blippey/lipco-assets/blob/main/';
 
   return (
     <section id="properties" className="py-24 bg-gray-900 border-t border-gray-800">
