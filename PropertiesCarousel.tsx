@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useRef, useEffect } from 'react';
 
 const assetBase = 'https://github.com/blippey/lipco-assets/blob/main/';
 
@@ -31,11 +31,33 @@ const PropertiesCarousel: React.FC = () => {
 
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
-      const { scrollLeft, clientWidth } = scrollRef.current;
-      const scrollTo = direction === 'left' ? scrollLeft - clientWidth / 2 : scrollLeft + clientWidth / 2;
+      const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
+      let scrollTo;
+      
+      if (direction === 'left') {
+        scrollTo = scrollLeft - clientWidth / 2;
+        if (scrollTo < -10) { // Wrap to end if at the very beginning
+          scrollTo = scrollWidth;
+        }
+      } else {
+        scrollTo = scrollLeft + clientWidth / 2;
+        // Check if we have reached the end (with a small tolerance)
+        if (scrollLeft + clientWidth >= scrollWidth - 10) {
+          scrollTo = 0;
+        }
+      }
+      
       scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
     }
   };
+
+  useEffect(() => {
+    const autoAdvance = setInterval(() => {
+      scroll('right');
+    }, 5000);
+
+    return () => clearInterval(autoAdvance);
+  }, []);
 
   return (
     <section id="properties" className="py-24 bg-slate-900 overflow-hidden">
@@ -49,12 +71,14 @@ const PropertiesCarousel: React.FC = () => {
             <button 
               onClick={() => scroll('left')}
               className="p-4 bg-slate-800 hover:bg-slate-700 text-white rounded-full transition-colors border border-slate-700 shadow-lg"
+              aria-label="Previous image"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M15 19l-7-7 7-7" /></svg>
             </button>
             <button 
               onClick={() => scroll('right')}
               className="p-4 bg-slate-800 hover:bg-slate-700 text-white rounded-full transition-colors border border-slate-700 shadow-lg"
+              aria-label="Next image"
             >
               <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M9 5l7 7-7 7" /></svg>
             </button>
@@ -76,6 +100,7 @@ const PropertiesCarousel: React.FC = () => {
                   src={prop.img} 
                   alt={`Property ${prop.id}`} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                  loading="lazy"
                 />
               </div>
             </div>
