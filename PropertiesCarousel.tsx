@@ -8,6 +8,22 @@ const PROPERTIES = [
   { id: 3, img: `${assetBase}4.jpg?raw=true` },
   { id: 4, img: `${assetBase}5.jpg?raw=true` },
   { id: 5, img: `${assetBase}6.jpg?raw=true` },
+  { id: 6, img: `${assetBase}1.png?raw=true` },
+  { id: 7, img: `${assetBase}2.png?raw=true` },
+  { id: 8, img: `${assetBase}3.png?raw=true` },
+  { id: 9, img: `${assetBase}4.png?raw=true` },
+  { id: 10, img: `${assetBase}5.png?raw=true` },
+  { id: 11, img: `${assetBase}7.png?raw=true` },
+  { id: 12, img: `${assetBase}10.png?raw=true` },
+  { id: 13, img: `${assetBase}11.png?raw=true` },
+  { id: 14, img: `${assetBase}12.png?raw=true` },
+  { id: 15, img: `${assetBase}13.png?raw=true` },
+  { id: 16, img: `${assetBase}14.png?raw=true` },
+  { id: 17, img: `${assetBase}15.png?raw=true` },
+  { id: 18, img: `${assetBase}16.png?raw=true` },
+  { id: 19, img: `${assetBase}17.png?raw=true` },
+  { id: 20, img: `${assetBase}18.png?raw=true` },
+  { id: 21, img: `${assetBase}19.png?raw=true` },
 ];
 
 const PropertiesCarousel: React.FC = () => {
