@@ -87,7 +87,7 @@ const PropertiesCarousel: React.FC = () => {
 
         <div 
           ref={scrollRef}
-          className="flex overflow-x-auto gap-8 pb-10 hide-scrollbar snap-x"
+          className="flex overflow-x-auto gap-8 pb-10 hide-scrollbar snap-x snap-mandatory md:snap-proximity"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
         >
           {PROPERTIES.map((prop) => (
