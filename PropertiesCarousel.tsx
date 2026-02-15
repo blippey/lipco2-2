@@ -32,18 +32,23 @@ const PropertiesCarousel: React.FC = () => {
   const scroll = (direction: 'left' | 'right') => {
     if (scrollRef.current) {
       const { scrollLeft, clientWidth, scrollWidth } = scrollRef.current;
+      // On mobile, we need to scroll by at least the width of one item + gap to trigger a snap change.
+      // Using clientWidth is a safe bet for "next page" behavior.
+      const scrollAmount = window.innerWidth < 768 ? clientWidth : clientWidth / 2;
       let scrollTo;
       
       if (direction === 'left') {
-        scrollTo = scrollLeft - clientWidth / 2;
-        if (scrollTo < -10) { // Wrap to end if at the very beginning
+        if (scrollLeft <= 10) { 
           scrollTo = scrollWidth;
+        } else {
+          scrollTo = scrollLeft - scrollAmount;
         }
       } else {
-        scrollTo = scrollLeft + clientWidth / 2;
         // Check if we have reached the end (with a small tolerance)
         if (scrollLeft + clientWidth >= scrollWidth - 10) {
           scrollTo = 0;
+        } else {
+          scrollTo = scrollLeft + scrollAmount;
         }
       }
       
