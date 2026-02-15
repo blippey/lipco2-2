@@ -8,6 +8,7 @@ import PropertiesCarousel from './PropertiesCarousel';
 import Contact from './Contact';
 import Footer from './Footer';
 
+
 const App: React.FC = () => {
   return (
     <div className="min-h-screen flex flex-col selection:bg-blue-500/30">
