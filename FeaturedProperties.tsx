@@ -52,10 +52,10 @@ const FeaturedProperties: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Featured Building For Sale - 1803 N San Fernando Rd */}
+        {/* Section 2: Featured Land for Sale - 1803 N San Fernando Rd */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Sale</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Land for Sale</h2>
             <div className="h-1 w-24 bg-teal-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-400">1803 N San Fernando Rd, Los Angeles, CA 90065</p>
           </div>
