@@ -7,12 +7,12 @@ const FeaturedProperties: React.FC = () => {
     <section id="properties" className="py-24 bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 max-w-6xl">
         
-        {/* Section 1: Featured Building For Lease - 1550 N San Fernando Rd */}
+        {/* Section 1: Featured Building For Lease - 20540 Superior St */}
         <div className="mb-32">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Lease</h2>
             <div className="h-1 w-24 bg-blue-600 mx-auto mb-6"></div>
-            <p className="text-xl text-gray-400">1550 N San Fernando Rd, Los Angeles, CA 90065</p>
+            <p className="text-xl text-gray-400">20540 Superior St, Chatsworth, CA 91311</p>
           </div>
           
           <div className="grid md:grid-cols-2 gap-12 lg:gap-20 mb-16">
@@ -21,7 +21,7 @@ const FeaturedProperties: React.FC = () => {
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={`${assetBase}1550-1.jpg?raw=true`} 
-                  alt="1550 N San Fernando Rd Exterior" 
+                  alt="20540 Superior St Exterior" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -32,7 +32,7 @@ const FeaturedProperties: React.FC = () => {
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={`${assetBase}1550-2.jpg?raw=true`} 
-                  alt="1550 N San Fernando Rd Interior" 
+                  alt="20540 Superior St Interior" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -41,7 +41,7 @@ const FeaturedProperties: React.FC = () => {
           
           <div className="text-center">
             <a 
-              href="https://www.loopnet.com/Listing/1550-N-San-Fernando-Rd-Los-Angeles-CA/38309006/" 
+              href="https://www.loopnet.com/Listing/20540-Superior-St-Chatsworth-CA/38309006/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-blue-500/30 active:scale-95"
