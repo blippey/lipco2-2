@@ -42,7 +42,7 @@ const FeaturedProperties: React.FC = () => {
           
           <div className="text-center">
             <a 
-              href="https://www.loopnet.com/Listing/20540-Superior-St-Chatsworth-CA/38309006/" 
+              href="https://www.loopnet.com/Listing/20540-Superior-St-Chatsworth-CA/40046454/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="inline-flex items-center space-x-2 bg-blue-600 hover:bg-blue-500 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-blue-500/30 active:scale-95"
