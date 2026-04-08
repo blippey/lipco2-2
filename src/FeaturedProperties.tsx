@@ -2,7 +2,7 @@
 import React from 'react';
 
 const FeaturedProperties: React.FC = () => {
-  const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
+  const assetBase = 'https://github.com/blippey/lipco-assets/blob/main/';
 
   return (
     <section id="properties" className="py-24 bg-gray-900 border-t border-gray-800">
@@ -21,8 +21,8 @@ const FeaturedProperties: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-blue-600 to-teal-500 rounded-2xl transform -rotate-3 transition-transform group-hover:-rotate-1"></div>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src={`${assetBase}1550-1.jpg?raw=true`} 
-                  alt="20540 Superior St Exterior" 
+                  src={`${assetBase}20540-1.png?raw=true`} 
+                  alt="" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -32,8 +32,8 @@ const FeaturedProperties: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-tr from-teal-500 to-blue-600 rounded-2xl transform rotate-3 transition-transform group-hover:rotate-1"></div>
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
-                  src={`${assetBase}1550-2.jpg?raw=true`} 
-                  alt="20540 Superior St Interior" 
+                  src={`${assetBase}20540-2.png?raw=true`} 
+                  alt="" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -67,7 +67,7 @@ const FeaturedProperties: React.FC = () => {
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={`${assetBase}1803-1.jpg?raw=true`} 
-                  alt="1803 N San Fernando Rd Exterior" 
+                  alt="" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
@@ -78,7 +78,7 @@ const FeaturedProperties: React.FC = () => {
               <div className="relative aspect-video rounded-2xl overflow-hidden shadow-2xl">
                 <img 
                   src={`${assetBase}1803-2.jpg?raw=true`} 
-                  alt="1803 N San Fernando Rd Interior" 
+                  alt="" 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
               </div>
