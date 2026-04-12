@@ -34,15 +34,15 @@ const Team: React.FC = () => {
             <div className="absolute inset-0 bg-gradient-to-r from-blue-600 to-teal-500 rounded-lg transform rotate-6 transition-transform group-hover:rotate-3"></div>
             <img 
               src={`${assetBase}Bill.jpg?raw=true`} 
-              alt="Bill Hunter, Operations Manager" 
+              alt="Bill Hunter, VP of Operations" 
               className="relative rounded-lg shadow-2xl w-full h-96 object-cover"
             />
           </div>
           <div className="order-1 md:order-2">
-            <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-6">Meet Our Operations Manager</h2>
+            <h2 className="text-3xl md:text-4xl font-bold font-serif text-white mb-6">Meet Our Vice President of Operations</h2>
             <div className="space-y-6 text-gray-400">
               <p className="text-lg">
-                Bill Hunter, our Operations Manager, is the primary point of contact for all tenant needs. He takes great care of our tenants and buildings, meticulously overseeing property maintenance to ensure that our facilities operate at peak efficiency.
+                Bill Hunter, our VP of Operations, is the primary point of contact for all tenant needs. He takes great care of our tenants and buildings, meticulously overseeing property maintenance to ensure that our facilities operate at peak efficiency.
               </p>
               <p>
                 With a focus on proactive support and rapid response, Bill ensures that every business we house can thrive without worrying about facility issues. For any property-related inquiries, don't hesitate to reach out to him directly.
