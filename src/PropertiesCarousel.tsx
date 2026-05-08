@@ -1,7 +1,7 @@
 
 import React, { useRef } from 'react';
 
-const assetBase = 'https://github.com/blippey/lipco-assets/blob/ec92cdae5c280b9213b26da7dfdf2480cf07c23e/';
+const assetBase = 'https://github.com/blippey/lipco-assets/blob/d8d0afa4117a419e95e41aaacbef6e5ba170e212/';
 
 const PROPERTIES = [
   { id: 1, img: `${assetBase}2.avif?raw=true` },
