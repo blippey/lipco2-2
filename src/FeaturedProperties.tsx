@@ -8,10 +8,10 @@ const FeaturedProperties: React.FC = () => {
     <section id="properties" className="py-24 bg-gray-900 border-t border-gray-800">
       <div className="container mx-auto px-4 max-w-6xl">
         
-        {/* Section 1: Featured Building For Lease - 20540 Superior St */}
+        {/* Section 1: Featured Property For Lease - 20540 Superior St */}
         <div className="mb-32">
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Lease</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Property For Lease</h2>
             <div className="h-1 w-24 bg-blue-600 mx-auto mb-6"></div>
             <p className="text-xl text-gray-400">20540 Superior St, Chatsworth, CA 91311</p>
           </div>
@@ -53,10 +53,10 @@ const FeaturedProperties: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Featured Building For Lease - 1803 N San Fernando Rd */}
+        {/* Section 2: Featured Property For Lease - 1803 N San Fernando Rd */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Lease</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Property For Lease</h2>
             <div className="h-1 w-24 bg-teal-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-400">1803 N San Fernando Rd, Los Angeles, CA 90065</p>
           </div>
