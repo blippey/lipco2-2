@@ -53,10 +53,10 @@ const FeaturedProperties: React.FC = () => {
           </div>
         </div>
 
-        {/* Section 2: Featured Building For Sale - 1803 N San Fernando Rd */}
+        {/* Section 2: Featured Building For Lease - 1803 N San Fernando Rd */}
         <div>
           <div className="text-center mb-16">
-            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Sale</h2>
+            <h2 className="text-3xl md:text-5xl font-bold font-serif text-white mb-6">Featured Building For Lease</h2>
             <div className="h-1 w-24 bg-teal-500 mx-auto mb-6"></div>
             <p className="text-xl text-gray-400">1803 N San Fernando Rd, Los Angeles, CA 90065</p>
           </div>
@@ -92,7 +92,7 @@ const FeaturedProperties: React.FC = () => {
               rel="noopener noreferrer" 
               className="inline-flex items-center space-x-2 bg-teal-600 hover:bg-teal-500 text-white font-bold py-4 px-10 rounded-full transition-all duration-300 transform hover:scale-105 shadow-xl shadow-teal-500/30 active:scale-95"
             >
-              <span>View Full Sale Listing</span>
+              <span>View Full Lease Listing</span>
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" /></svg>
             </a>
           </div>
